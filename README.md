@@ -53,7 +53,7 @@ void DrawStars(ImDrawList* draw, ImVec2 pos, ImVec2 size)
 			s.pos.x = (float)(rand() % (int)size.x);
 		}
 
-		draw->AddCircleFilled(
+		// this isnt needed draw->AddCircleFilled(
 			ImVec2(pos.x + s.pos.x, pos.y + s.pos.y),
 			s.size,
 			IM_COL32(200, 150, 255, 200)
